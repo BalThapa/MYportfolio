@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 228, 205);
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+header {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 3rem;
+    width: 100%;
+}
+.bg{
+    background: #687ef0;
+    color: #333;
+    padding: 2rem;
+    height: 3rem;
+}
+
+.mobile {
+    display: none;
+    border: none;
+    box-shadow: none;
+    color: rgb(227, 18, 18);
+}
+
+nav ul li a {
+    color: inherit;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+a {
+    padding: 0.5rem;
+    color: tomato;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav ul li {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+.g {
+    grid-area: g;
+}
+
+.h {
+    grid-area: h;
+}
+
+.i {
+    grid-area: i;
+}
+
+.j {
+    grid-area: j;
+}
+
+.k {
+    grid-area: k;
+}
+
+.collection {
+    display: grid;
+    gap: 1rem 1rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
+    grid-template-areas: "d e g f"
+        "h h k k"
+        "c b b j"
+        "a b b i";
+}
+
+button {
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    background-color: rgb(206, 129, 129);
+    font-family: 'Roboto Flex', sans-serif;
+    padding: 0.5rem 1.5rem;
+
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+}
+
+.container3 {
+    height: 18rem;
+    background-color: rgb(92, 60, 60);
+    padding: 1rem;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+label {
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+}
+
+input {
+    display: inline-block;
+    padding: 2px;
+    width: 20rem;
+    border-radius: 5px;
+    margin-left: 5rem;
+}
+
+textarea {
+    border-radius: 5px;
+    margin-left: 3.5rem;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.send {
+    background-color: tomato;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    ul.responsive {
+        display: block;
+        background-color: white;
+        color: #333;
+        position: absolute;
+        left: 0;
+        top: 5rem;
+        width: 100%;
+
+    }
+
+    ul.responsive li {
+        display: block;
+        margin: 1rem;
+    }
+
+    header .bg .mobile {
+        color: #333;
+    }
+}
+
+@media (max-width: 576px) {
+
+    body {
+        width: 100vw;
+    }
+
+    h1{
+        font-size: large;
+    }
+
+    .container3{
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    form {
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        justify-content: center;
+
+
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+
+input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    width: 100% ;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+
+textarea {
+    display: flex;
+    border-radius: 5px;
+    margin-left: 1px;
+    width: 100%;
+
+}
+
+.message {
+    display: flex;
+    margin: 1px;
+    align-items: center;
+}
+ #backToTop {
+    float: left;
+ }
+
+}
